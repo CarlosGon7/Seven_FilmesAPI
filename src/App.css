@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    gap: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+a.active {
+    color: #007bff;
+    border-bottom: #007bff 2px solid;
+}
