@@ -34,3 +34,127 @@ export function TheMovieDBLogo(props) {
     </svg>
   )
 }
+
+export function Tvcomponent(props) {
+  return (
+    <svg
+      width={281}
+      height={281}
+      viewBox="0 0 281 281"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M145.183 208.405a4.683 4.683 0 00-4.683-4.683h-4.683a4.684 4.684 0 00-4.684 4.683v11.179c0 2.534-2.016 4.604-4.548 4.724a245.651 245.651 0 00-24.9 2.448l-25.8 3.869a9.368 9.368 0 00-7.977 9.264v2.47a2.342 2.342 0 002.342 2.342h135.817a2.342 2.342 0 002.341-2.342v-2.47a9.367 9.367 0 00-7.977-9.264l-25.8-3.869a245.623 245.623 0 00-24.9-2.448c-2.531-.12-4.548-2.19-4.548-4.724v-11.179z"
+        fill="url(#paint0_radial_16_1316)"
+      />
+      <path
+        d="M72.592 237.05c0-1.983 1.4-3.679 3.357-4.011 9.989-1.692 40.192-6.48 62.209-6.48 22.018 0 52.221 4.788 62.21 6.48 1.957.332 3.357 2.028 3.357 4.011 0 .637-.556 1.124-1.184 1.021-6.926-1.145-42.643-6.867-64.383-6.867-21.74 0-57.456 5.722-64.383 6.867a1.021 1.021 0 01-1.183-1.021z"
+        fill="url(#paint1_radial_16_1316)"
+      />
+      <path
+        d="M245.875 46.833H35.125a7.025 7.025 0 00-7.025 7.025v147.525a7.025 7.025 0 007.025 7.025h210.75a7.025 7.025 0 007.025-7.025V53.858a7.025 7.025 0 00-7.025-7.025z"
+        fill="url(#paint2_linear_16_1316)"
+      />
+      <path
+        d="M245.875 46.833H35.125a7.025 7.025 0 00-7.025 7.025v147.525a7.025 7.025 0 007.025 7.025h210.75a7.025 7.025 0 007.025-7.025V53.858a7.025 7.025 0 00-7.025-7.025z"
+        fill="url(#paint3_radial_16_1316)"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M35.125 49.175h210.75a4.682 4.682 0 014.683 4.683V196.7H30.441V53.858a4.683 4.683 0 014.684-4.683zM28.1 196.7V53.858a7.025 7.025 0 017.025-7.025h210.75a7.025 7.025 0 017.025 7.025v147.525a7.025 7.025 0 01-7.025 7.025H35.125a7.025 7.025 0 01-7.025-7.025V196.7z"
+        fill="url(#paint4_radial_16_1316)"
+      />
+      <path
+        d="M138.158 206.067c3.88 0 7.025-1.573 7.025-3.513s-3.145-3.512-7.025-3.512c-3.879 0-7.025 1.572-7.025 3.512s3.146 3.513 7.025 3.513z"
+        fill="url(#paint5_radial_16_1316)"
+      />
+      <defs>
+        <radialGradient
+          id="paint0_radial_16_1316"
+          cx={0}
+          cy={0}
+          r={1}
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="rotate(118.526 40.918 154.742) scale(215.269 180.648)"
+        >
+          <stop stopColor="#000B80" />
+          <stop offset={0.333333} stopColor="#183B6F" />
+          <stop offset={0.666667} stopColor="#13455B" />
+          <stop offset={1} stopColor="#1D1945" />
+        </radialGradient>
+        <radialGradient
+          id="paint1_radial_16_1316"
+          cx={0}
+          cy={0}
+          r={1}
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="matrix(-118.52397 47.60789 -61.41488 -152.89766 187.754 209.239)"
+        >
+          <stop stopColor="#1D4499" />
+          <stop offset={0.333333} stopColor="#2E1699" />
+          <stop offset={0.666667} stopColor="#18477D" />
+          <stop offset={1} stopColor="#34216E" />
+        </radialGradient>
+        <linearGradient
+          id="paint2_linear_16_1316"
+          x1={40.8726}
+          y1={58.3746}
+          x2={219.24}
+          y2={200.92}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#2A1699" />
+          <stop offset={0.245283} stopColor="#00CAC0" />
+          <stop offset={0.346698} stopColor="#47E3FF" />
+          <stop offset={0.46934} stopColor="#4AB9F1" />
+          <stop offset={0.735849} stopColor="#1A1DBC" />
+          <stop offset={1} stopColor="#734FF5" />
+        </linearGradient>
+        <radialGradient
+          id="paint3_radial_16_1316"
+          cx={0}
+          cy={0}
+          r={1}
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="matrix(0 101.305 -100.904 0 150.718 92.998)"
+        >
+          <stop stopColor="#1C0E20" stopOpacity={0} />
+          <stop offset={1} stopColor="#1C0E20" />
+        </radialGradient>
+        <radialGradient
+          id="paint4_radial_16_1316"
+          cx={0}
+          cy={0}
+          r={1}
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="matrix(-149.86579 107.71726 -102.09914 -142.04936 210.75 78.812)"
+        >
+          <stop stopColor="#44EFEF" />
+          <stop offset={0.333333} stopColor="#091BE5" />
+          <stop offset={0.666667} stopColor="#0D22A7" />
+          <stop offset={1} stopColor="#2A5895" />
+        </radialGradient>
+        <radialGradient
+          id="paint5_radial_16_1316"
+          cx={0}
+          cy={0}
+          r={1}
+          gradientTransform="rotate(135 29.764 129.739) scale(17.9034)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#CCFCFF" />
+          <stop offset={0.333333} stopColor="#BDDFFF" />
+          <stop offset={0.666667} stopColor="#9DCCF8" />
+          <stop offset={1} stopColor="#B1A1FA" />
+        </radialGradient>
+      </defs>
+    </svg>
+  )
+}
+
+

@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { options } from '../../App.jsx'
 import './Generos.css'
 
-
-
 export default function NavGeneros(){
 
     const [links, setLinks] = useState()
@@ -16,9 +14,9 @@ export default function NavGeneros(){
             .catch(err => console.error(err));
     }
 
-     useEffect(()=>{
-         getGeneros();
-     }, [])
+      useEffect(()=>{
+          getGeneros();
+      }, [])
 
      console.log("Links: ", links)
 
@@ -36,7 +34,7 @@ export default function NavGeneros(){
             <ul>
                 {
                     links.map(link => (
-                            <NavLink key={link.id}>{link.name}</NavLink>
+                            <NavLink to={`/generos/gen/${link.id}`} key={link.id}>{link.name}</NavLink>
                     ))
                 }
             </ul>

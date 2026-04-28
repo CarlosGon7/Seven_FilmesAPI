@@ -11,6 +11,7 @@ import Series from './components/Series';
 import Generos from './components/Generos/index.jsx';
 import MinhaLista from './components/MinhaLista';
 
+import { GenFilme } from './components/Generos';
 
 // Criando o router para a aplicação
 // Caminhos routers para cada componente
@@ -30,7 +31,12 @@ const router = createBrowserRouter([
         path: 'series', Component: Series
       },
       {
-        path: '/generos', Component: Generos
+        path: '/generos', Component: Generos,
+        children: [
+          {
+            path: 'gen/:id', Component: GenFilme
+          }
+        ]
       },
       {
         path: 'minhalista', Component: MinhaLista
