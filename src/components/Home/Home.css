@@ -1,0 +1,30 @@
+
+h1 {
+    color: #FFF;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 24px;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.movie-list .movie-card {
+    padding: 12px 12px;
+    
+
+    & img {
+        transition: transform .3s ease;
+
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}
+
+.movie-card img:hover{
+    transform: scale(1.05);
+    
+}
