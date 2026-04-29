@@ -19,3 +19,31 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #000102;
 }
+
+.content-error{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #000102;
+}
+
+.error{
+    font-size: 200px;
+}
+
+.ai-gradient {
+    background: radial-gradient(240.93% 224.55% at 167.82% -57.76%, #2A1699 0%, #47E3FF 26.92%, #00CAC0 51.44%, #1A1DBC 92.79%);;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: #00CAC0;
+}
+
+.texto {
+    font-size: 32px;
+    color: #FFF;
+}
