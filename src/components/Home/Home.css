@@ -1,6 +1,62 @@
-
-h1,h2,h3,h4,p {
+h1,
+h2,
+h3,
+h4,
+p {
     color: #FFF;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.hero-bg {
+    height: 100vh;
+    width: 100vw;
+
+    background: url('../../assets/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -80px;
+    left: -38px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 800px;
+}
+
+.span-hero {
+    border: none;
+
+    font-size: 16px;
+    color: var(--color-white-100);
+    text-align: center;
+    align-items: center;
+    width: 270px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--color-light-blue);
+
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.span-hero:hover {
+    background-color: #33DDFF;
 }
 
 .movie-list {
@@ -10,23 +66,124 @@ h1,h2,h3,h4,p {
     flex-wrap: wrap;
     padding: 24px 24px;
 
-    column-gap: 10px;
-    row-gap: 10px;
+    gap: 40px;
 }
 
 
 .movie-list .movie-card {
-    padding: 12px 12px;
-    color: var(--color-white-100);    
+    filter: saturate(0);
+    transition: .3s all ease;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 4px;
+
+    color: var(--color-white-100);
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.movie-list .movie-card:hover {
+    filter: saturate(1);
+    border: 2px solid #FFF;
+}
+
+.movie-card .img-card {
+    width: 206px;
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+.movie-card .content-banner {
+    position: relative;
+    background-color: green;
+    filter: saturate(0);
+    transition: .3s filter ease;
+    width: 550px;
+    height: 310px;
+}
+
+.movie-card .img-banner {
+    position: relative;
+    width: 550px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 
     & img {
-        transition: transform .3s ease;
-
-        border-radius: 8px;
-        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        width: 100%;
     }
 }
 
-.movie-card img:hover{
-    transform: scale(1.05);
+.movie-card .img-banner::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, #000 16.05%, rgba(0, 0, 0, 0.00) 98.82%);
+}
+
+.img-banner .content-info {
+    position: absolute;
+    width: 460px;
+
+    left: 24px;
+    bottom: 24px;
+    bottom: 32px;
+    z-index: 8;
+
+    display: flex;
+    flex-direction: column;
+
+    & .titulo {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    & .overview {
+        font-size: 12px;
+    }
+
+    & .info {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+
+        & .release-date {
+            font-size: 10px;
+        }
+
+        & .popularity {
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+
+}
+
+
+.movie-card .content-banner:hover {
+    filter: saturate(1);
 }

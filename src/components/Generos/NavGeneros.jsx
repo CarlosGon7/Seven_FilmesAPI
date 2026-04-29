@@ -1,15 +1,14 @@
 import { Link, Outlet, NavLink } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import { options } from '../../App.jsx'
-import './Generos.css'
-import { loadingData } from '../../App.jsx';
+import { options } from '../../App.jsx';
+import './Generos.css';
 import { FaceError } from '../SvgComponents/index.jsx';
 
 export default function NavGeneros() {
     const [links, setLinks] = useState(null)
 
     async function getGeneros() {
-        fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
+        fetch('https://api.themoviedb.org/3/genre/movie/list?language=pt', options)
             .then(res => res.json())
             .then(res => setLinks(res.genres))
             .catch(err => console.error(err));

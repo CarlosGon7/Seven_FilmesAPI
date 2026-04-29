@@ -1,0 +1,73 @@
+.filmes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 100%;
+    height: fit-content;
+    padding: 8px 32px 16px;
+}
+
+.animate-section, .medo-section, .acao-section, .comedia-section{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.container-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: scroll;
+    padding: 12px 24px;
+}
+
+.container-list .f-card {
+    padding: 12px;
+    width: fit-content;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: border .3s ease;
+}
+
+.f-card .img-card {
+    width: 220px;
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.f-card .img-card:hover{
+    transform: scale(1.05);
+    
+}
+
+.container-list .f-card:hover{
+    border-color: #FFF;
+}
+
+
+
+
+
+/* Tamanho da barra */
+.container-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+/*  A parte que a gente arrasta (Thumb) */
+.container-list::-webkit-scrollbar-thumb{
+    background: #01B4E4;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* O fundo da barra (Track) */
+.container-list::-webkit-scrollbar-track {
+  background: rgba(255,255,225,0.3); 
+  border-radius: 10px;
+}
+
+/* Efeito quando passa o mouse */
+.container-list::-webkit-scrollbar-thumb:hover {
+}

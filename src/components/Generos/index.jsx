@@ -2,7 +2,7 @@ import { NavLink, Link, useParams, Outlet } from "react-router"
 import { useEffect, useState } from "react";
 import './Generos.css'
 
-import { loadingData, options } from '../../App.jsx'
+import { options } from '../../App.jsx'
 import NavGeneros from "./NavGeneros.jsx"
 
 // function DisplayGet({db}) {
@@ -28,7 +28,7 @@ export function GetGeneroFilme() {
     const [gen, setGen] = useState([]);
 
     function getgenres() {
-        fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=${id ? id : 16}`, options)
+        fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=pt-BR&page=1&sort_by=popularity.desc&with_genres=${id ? id : '16'}`, options)
             .then(generos => generos.json())
             .then(generos => {
                 setGen(generos.results)
@@ -38,7 +38,6 @@ export function GetGeneroFilme() {
 
     useEffect(() => {
         getgenres();
-
     }, [id])
 
 

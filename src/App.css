@@ -5,6 +5,7 @@
     height: 100%;
 
     padding: 80px 38px;
+    position: relative;
 }
 
 .error-msg {
@@ -53,5 +54,32 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+.loader-horizontal{
+    height: 10px;
+    width: 1200px;
+    background-color: gray;
+}
+
+.loading-horizontal {
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(90deg, #27c2ec 0.44%, #01B4E4 52.8%, #09abd8 99.45%);
+
+    transform: translateX(1000px);
+
+    animation: 1s loading-horizontal linear infinite;
+}
+
+@keyframes loading-horizontal {
+    0% {
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(1100px);
+
     }
 }

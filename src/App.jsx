@@ -25,16 +25,25 @@ export function ErrorMsg() {
   )
 }
 
-export function loadingData(){
-        return(
-            <>
-                <div className='loader'>
-                    <div className='loading'>
-                    </div>
-                </div>
-            </>
-        )
-    }
+export function LoadingData() {
+  return (
+    <>
+      <div className='loader'>
+        <div className='loading'></div>
+      </div>
+    </>
+  )
+}
+
+export function loadingHorizontal() {
+  return (
+    <>
+      <div class="loader-horizontal">
+        <div class="loading-horizontal"></div>
+      </div>
+    </>
+  )
+}
 
 function App() {
   return (
