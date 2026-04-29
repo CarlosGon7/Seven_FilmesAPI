@@ -2,10 +2,11 @@ import { Link, Outlet, NavLink } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import { options } from '../../App.jsx'
 import './Generos.css'
+import { loadingData } from '../../App.jsx';
+import { FaceError } from '../SvgComponents/index.jsx';
 
-export default function NavGeneros(){
-
-    const [links, setLinks] = useState()
+export default function NavGeneros() {
+    const [links, setLinks] = useState(null)
 
     async function getGeneros() {
         fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
@@ -14,32 +15,27 @@ export default function NavGeneros(){
             .catch(err => console.error(err));
     }
 
-      useEffect(()=>{
-          getGeneros();
-      }, [])
+    useEffect(() => {
+        getGeneros();
+    }, [])
 
-     console.log("Links: ", links)
+    const DisplayNav = () => {
+            return (
+                <ul>
+                    {
+                        links.map(link => (
+                            <NavLink to={`/generos/gen/${link.id}`} key={link.id}>{link.name}</NavLink>
+                        ))
+                    }
+                </ul>
+            )}
 
-     function navlinks(){
-        if(links){
-            links.map(link => { 
-            })
-        }
-     }
     return (
         <>
-        <h3 className='title'>Gêneros</h3>
-        <nav className="nav-gen">
-        {links && (
-            <ul>
-                {
-                    links.map(link => (
-                            <NavLink to={`/generos/gen/${link.id}`} key={link.id}>{link.name}</NavLink>
-                    ))
-                }
-            </ul>
-        )}    
-        </nav>
+            <h3 className='title'>Gêneros</h3>
+            <nav className="nav-gen">
+                {links !== null ? <DisplayNav /> : <FaceError />}
+            </nav>
         </>
     )
 }

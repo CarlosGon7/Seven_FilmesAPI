@@ -1,6 +1,6 @@
 .aside-container {
     top: 80px;
-    width: 300px;
+    width: 220px;
     height: 200vh;
     padding: 20px;
     padding-left: 0;
@@ -26,7 +26,6 @@
     align-items: start;
 
 }
-
 
 .nav-gen ul {
     display: flex;
@@ -56,10 +55,28 @@
     font-weight: 600;
 }
 
-.generos-list{
+.generos-container {
+    width: 100%;
+    height: fit-content;
+
     padding: 12px 24px;
     display: flex;
     flex-wrap: wrap;
     
     gap: 8px;
+}
+
+.generos-card {
+    width: 260px;
+    padding: 8px;
+}
+
+.generos-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.generos-card img:hover{
+    transform: scale(1.05);
 }

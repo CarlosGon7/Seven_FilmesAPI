@@ -25,6 +25,17 @@ export function ErrorMsg() {
   )
 }
 
+export function loadingData(){
+        return(
+            <>
+                <div className='loader'>
+                    <div className='loading'>
+                    </div>
+                </div>
+            </>
+        )
+    }
+
 function App() {
   return (
     <>

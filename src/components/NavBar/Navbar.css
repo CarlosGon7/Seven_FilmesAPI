@@ -6,7 +6,7 @@
 
 .header-container {
     background-color: #000102;
-    padding: 14px 64px;
+    padding: 14px 64px 14px;
     max-height: 80px;
     display: flex;
     position: fixed;
@@ -26,32 +26,29 @@
     min-width: 100%;
     height: 2px;
     background: linear-gradient(90deg, #01637E 0.44%, #01B4E4 52.8%, #01637E 99.45%);
-
-}
-
-.logo-nav, .profile {
-    flex: 1;
 }
 
 .nav {
     flex: 2;
     display: flex;
     gap: 12px;
-    justify-content: center;
-    align-items: center;
 }
 
-.logo-nav {
+.profile-credito{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
-
-.logo-nav span {
+.profile-credito span {
     color: var(--color-white-70);
     font-size: 12px;
 }
 
+.profile span {
+    font-size: 16px;
+    color: var(--color-white-100);
+}
 a {
     text-decoration: none;
     color: var(--color-white-50);
@@ -73,10 +70,4 @@ a.active {
 
 .spanlink {
     padding: 8px 16px;
-}
-
-.profile {
-    display: flex;
-    justify-content: flex-end;
-    color: var(--color-white-100);
 }
